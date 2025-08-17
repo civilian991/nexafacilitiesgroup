@@ -32,31 +32,31 @@ export default function UnderConstructionPage() {
       {/* Main Content Container */}
       <div className="relative z-10 min-h-screen flex flex-col">
         {/* Header */}
-        <header className="pt-12 pb-8 px-6">
+        <header className="pt-8 pb-6 px-4 sm:pt-12 sm:pb-8 sm:px-6">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
-              <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-3 sm:mb-4 tracking-tight">
+              <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent block sm:inline">
                 NEXA
               </span>
-              <span className="text-gray-100">
+              <span className="text-gray-100 block sm:inline text-2xl sm:text-5xl md:text-7xl">
                 FACILITIES
               </span>
-              <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent block sm:inline">
                 GROUP
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 font-light tracking-wide">
+            <p className="text-base sm:text-xl md:text-2xl text-gray-400 font-light tracking-wide px-4 sm:px-0">
               Engineering Excellence • Industrial Innovation
             </p>
           </div>
         </header>
 
         {/* Industrial Animation Section */}
-        <section className="flex-1 flex items-center justify-center px-6 py-12">
+        <section className="flex-1 flex items-center justify-center px-4 sm:px-6 py-8 sm:py-12">
           <div className="max-w-6xl w-full">
-            <div className="relative h-64 md:h-96">
-              {/* SVG Industrial Animation */}
-              <svg viewBox="0 0 800 400" className="w-full h-full">
+            <div className="relative h-48 sm:h-64 md:h-96">
+              {/* SVG Industrial Animation - Responsive viewBox */}
+              <svg viewBox="0 0 800 400" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
                 {/* Conveyor Belt */}
                 <rect x="100" y="300" width="600" height="20" fill="#4a5568" />
                 <rect x="100" y="300" width="600" height="4" fill="#2d3748">
@@ -136,72 +136,72 @@ export default function UnderConstructionPage() {
                   <rect x="26" y="28" width="12" height="4" fill="#718096" transform="rotate(45 32 30)" />
                 </g>
 
-                {/* Status Text */}
-                <text x="400" y="50" textAnchor="middle" className="fill-gray-400 text-2xl font-bold">
+                {/* Status Text - Responsive font sizes */}
+                <text x="400" y="50" textAnchor="middle" className="fill-gray-400 font-bold" style={{ fontSize: 'clamp(16px, 3vw, 24px)' }}>
                   BUILDING SOMETHING GREAT
                 </text>
-                <text x="400" y="80" textAnchor="middle" className="fill-gray-500 text-lg animate-pulse">
+                <text x="400" y="80" textAnchor="middle" className="fill-gray-500 animate-pulse" style={{ fontSize: 'clamp(14px, 2.5vw, 18px)' }}>
                   Under Construction
                 </text>
               </svg>
             </div>
 
             {/* Progress Bar */}
-            <div className="mt-8 max-w-2xl mx-auto">
-              <div className="bg-gray-800 h-4 rounded-full overflow-hidden">
+            <div className="mt-6 sm:mt-8 max-w-2xl mx-auto px-4 sm:px-0">
+              <div className="bg-gray-800 h-3 sm:h-4 rounded-full overflow-hidden">
                 <div className="h-full bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-progress" />
               </div>
-              <p className="text-center mt-3 text-gray-400">Loading excellence...</p>
+              <p className="text-center mt-2 sm:mt-3 text-sm sm:text-base text-gray-400">Loading excellence...</p>
             </div>
           </div>
         </section>
 
         {/* Email Capture Form */}
-        <section className="py-12 px-6">
+        <section className="py-8 sm:py-12 px-4 sm:px-6">
           <div className="max-w-md mx-auto">
-            <h2 className="text-2xl font-bold text-center mb-6">Get Notified When We Launch</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">Get Notified When We Launch</h2>
             
             {!isSubmitted ? (
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-3">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   required
-                  className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-orange-500 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-orange-500 transition-colors text-base"
                 />
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-8 py-3 bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-yellow-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-6 sm:px-8 py-3 bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-yellow-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 touch-manipulation"
                 >
                   {isSubmitting ? 'Submitting...' : 'Notify Me'}
                 </button>
               </form>
             ) : (
-              <div className="text-center p-6 bg-green-900/20 border border-green-500/30 rounded-lg">
-                <p className="text-green-400 text-lg">✓ Thank you! We'll notify you when we launch.</p>
+              <div className="text-center p-4 sm:p-6 bg-green-900/20 border border-green-500/30 rounded-lg">
+                <p className="text-green-400 text-base sm:text-lg">✓ Thank you! We'll notify you when we launch.</p>
               </div>
             )}
           </div>
         </section>
 
         {/* Footer */}
-        <footer className="py-8 px-6 border-t border-gray-800">
+        <footer className="py-6 sm:py-8 px-4 sm:px-6 border-t border-gray-800">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-              <div>
-                <p className="text-gray-500 italic">"Precision in Every Detail"</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-center">
+              <div className="px-2">
+                <p className="text-gray-500 italic text-sm sm:text-base">"Precision in Every Detail"</p>
               </div>
-              <div>
-                <p className="text-gray-500 italic">"Building Tomorrow, Today"</p>
+              <div className="px-2">
+                <p className="text-gray-500 italic text-sm sm:text-base">"Building Tomorrow, Today"</p>
               </div>
-              <div>
-                <p className="text-gray-500 italic">"Where Innovation Meets Infrastructure"</p>
+              <div className="px-2">
+                <p className="text-gray-500 italic text-sm sm:text-base">"Where Innovation Meets Infrastructure"</p>
               </div>
             </div>
-            <div className="mt-6 text-center text-gray-600 text-sm">
+            <div className="mt-4 sm:mt-6 text-center text-gray-600 text-xs sm:text-sm px-2">
               © 2025 Nexa Facilities Group. Engineering the Future.
             </div>
           </div>
