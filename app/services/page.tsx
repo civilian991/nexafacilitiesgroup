@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 export default function ServicesPage() {
-  const [activeTab, setActiveTab] = useState('hvac')
+  const [activeTab, setActiveTab] = useState<'hvac' | 'refrigeration' | 'troubleshooting' | 'project'>('hvac')
 
   const services = {
     hvac: {
@@ -138,7 +138,7 @@ export default function ServicesPage() {
             {Object.entries(services).map(([key, service]) => (
               <button
                 key={key}
-                onClick={() => setActiveTab(key)}
+                onClick={() => setActiveTab(key as 'hvac' | 'refrigeration' | 'troubleshooting' | 'project')}
                 className={`group relative px-6 py-3 rounded-xl font-semibold transition-all transform hover:scale-105 ${
                   activeTab === key
                     ? 'text-white'
