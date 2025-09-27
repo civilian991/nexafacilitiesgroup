@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: 'Nexa Facilities Group',
     images: [
       {
-        url: '/nexa-facilities-logo.jpeg',
+        url: '/nexa-logo.jpeg',
         width: 1200,
         height: 630,
         alt: 'Nexa Facilities Group Logo',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Nexa Facilities Group - Expert HVAC/R Maintenance Services",
     description: "Professional commercial HVAC and refrigeration maintenance services across multiple states.",
-    images: ['/nexa-facilities-logo.jpeg'],
+    images: ['/nexa-logo.jpeg'],
   },
   robots: {
     index: true,
