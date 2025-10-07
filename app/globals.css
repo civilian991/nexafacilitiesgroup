@@ -1,26 +1,198 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Tailwind CSS 4 Theme Configuration */
+@theme {
+  /* Professional Industrial Theme - Perfect for HVAC/Facilities Management */
+
+  /* Base Colors */
+  --color-background: oklch(0.985 0 0);
+  --color-foreground: oklch(0.18 0 0);
+
+  /* Card Colors */
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.18 0 0);
+
+  /* Popover Colors */
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.18 0 0);
+
+  /* Primary - Professional Deep Blue/Navy */
+  --color-primary: oklch(0.35 0.18 250);
+  --color-primary-foreground: oklch(1 0 0);
+
+  /* Secondary - Industrial Orange */
+  --color-secondary: oklch(0.65 0.2 45);
+  --color-secondary-foreground: oklch(1 0 0);
+
+  /* Muted Colors */
+  --color-muted: oklch(0.94 0 0);
+  --color-muted-foreground: oklch(0.45 0 0);
+
+  /* Accent - Technical Teal */
+  --color-accent: oklch(0.58 0.15 195);
+  --color-accent-foreground: oklch(1 0 0);
+
+  /* Destructive/Alert */
+  --color-destructive: oklch(0.55 0.22 25);
+  --color-destructive-foreground: oklch(1 0 0);
+
+  /* Borders and Inputs */
+  --color-border: oklch(0.88 0 0);
+  --color-input: oklch(0.92 0 0);
+  --color-ring: oklch(0.35 0.18 250);
+
+  /* Chart Colors */
+  --color-chart-1: oklch(0.35 0.18 250);
+  --color-chart-2: oklch(0.65 0.2 45);
+  --color-chart-3: oklch(0.58 0.15 195);
+  --color-chart-4: oklch(0.7 0.12 110);
+  --color-chart-5: oklch(0.45 0.16 280);
+
+  /* Custom HVAC Theme Colors */
+  --color-success: oklch(0.6 0.18 140);
+  --color-success-foreground: oklch(1 0 0);
+  --color-warning: oklch(0.7 0.2 65);
+  --color-warning-foreground: oklch(0.18 0 0);
+  --color-info: oklch(0.55 0.15 210);
+  --color-info-foreground: oklch(1 0 0);
+
+  /* Service-specific Colors */
+  --color-hvac: oklch(0.55 0.15 210);
+  --color-refrigeration: oklch(0.58 0.15 195);
+  --color-emergency: oklch(0.65 0.2 45);
+  --color-project: oklch(0.35 0.18 250);
+
+  /* Typography - Using System Fonts */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius: 0.5rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Breakpoints */
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Base Styles */
+@layer base {
+  * {
+    @apply border-border;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl lg:text-3xl;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Custom Utility Classes */
+@layer utilities {
+  .animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slideInLeft {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+
+  .animate-slideInRight {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animate-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .section-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  .section-reveal.visible {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .gradient-primary {
+    background: linear-gradient(135deg, oklch(0.35 0.18 250), oklch(0.42 0.16 240));
+  }
+
+  .gradient-secondary {
+    background: linear-gradient(135deg, oklch(0.65 0.2 45), oklch(0.72 0.18 55));
+  }
 }
