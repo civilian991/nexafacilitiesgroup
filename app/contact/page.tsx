@@ -54,8 +54,8 @@ export default function ContactPage() {
             GET IN TOUCH
           </h1>
           <p className="text-xl md:text-2xl opacity-90 animate-fadeInUp animate-delay-200">
-            Ready to experience professional HVAC/R maintenance?<br />
-            Contact us today for fast, reliable service.
+            Expert care for your HVAC/R systems.<br />
+            Get fast, professional service from our skilled team today.
           </p>
         </div>
       </section>

@@ -75,6 +75,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Contact Info</h4>
             <ul className="space-y-2">
+              <li className="text-gray-400">📍 4308 Hudson Street<br />Metairie, LA 70006</li>
               <li className="text-gray-400">📞 1-504-688-2541</li>
               <li className="text-gray-400">✉️ info@nexafacilitiesgroup.com</li>
               <li className="text-gray-400">🕐 24/7 Emergency Service</li>

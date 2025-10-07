@@ -8,14 +8,12 @@ export default function Hero() {
     >
       <div className="container mx-auto px-4 lg:px-8 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fadeInUp">
-          FAST, PROFESSIONAL MAINTENANCE
+          FAST, PROFESSIONAL SERVICE
           <br />
           YOU CAN TRUST
         </h1>
         <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fadeInUp animate-delay-200">
-          Expert HVAC/R maintenance across multiple states.
-          <br />
-          Fast, reliable, and professional service that keeps your business fully operational.
+          Dependable, efficient, and professional service designed to keep your business running smoothly without interruption.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp animate-delay-400">
           <Link

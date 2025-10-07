@@ -110,18 +110,6 @@ export default function Stats() {
 
   const stats = [
     {
-      icon: 'building',
-      value: '10+',
-      label: 'States Covered',
-      color: 'var(--primary)'
-    },
-    {
-      icon: 'wrench',
-      value: '500+',
-      label: 'Stores Serviced',
-      color: 'var(--secondary)'
-    },
-    {
       icon: 'clock',
       value: '24/7',
       label: 'Emergency Service',
@@ -132,6 +120,18 @@ export default function Stats() {
       value: '99%',
       label: 'Uptime Rate',
       color: 'var(--success)'
+    },
+    {
+      icon: 'award',
+      value: '30+',
+      label: 'Years Experience',
+      color: 'var(--primary)'
+    },
+    {
+      icon: 'wrench',
+      value: '100%',
+      label: 'Customer Satisfaction',
+      color: 'var(--secondary)'
     }
   ];
 

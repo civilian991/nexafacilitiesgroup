@@ -112,7 +112,7 @@ export default function AboutPage() {
             ABOUT NEXA
           </h1>
           <p className="text-xl md:text-2xl opacity-90 animate-fadeInUp animate-delay-200">
-            Your trusted partner in commercial HVAC/R maintenance
+            Your trusted partner in commercial HVAC/R services
           </p>
         </div>
       </section>
@@ -124,25 +124,18 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-primary">WHO WE ARE</h2>
               <p className="text-lg leading-relaxed text-foreground">
-                Nexa Facilities Group provides expert maintenance services for commercial stores
-                across multiple states in the U.S., specializing in HVAC/R systems. Our skilled
-                team handles all aspects of system maintenance and repairs, ensuring your
-                facilities remain fully operational and efficient.
+                With over 30 years of international experience, Nexa Facilities Group brings expert HVAC/R solutions to commercial stores across multiple states in the U.S. Our team specializes in system maintenance, repairs, and installation, providing businesses with reliable services that keep their facilities safe, efficient, and fully operational.
               </p>
               <p className="text-lg leading-relaxed text-foreground">
-                We bring extensive experience in project implementation, system servicing, and
-                troubleshooting, delivering reliable solutions that keep your business running
-                without interruptions.
+                We have extensive experience in troubleshooting, servicing, and project management, handling systems of all sizes—from simple split units to large-scale commercial rooftop units. Our global experience allows us to apply best practices and proven solutions to every project we undertake.
               </p>
               <p className="text-lg leading-relaxed text-foreground">
-                With Nexa Facilities Group, you can trust that your commercial spaces are in the
-                hands of experts committed to keeping your operations smooth, safe, and fully
-                functional.
+                At Nexa Facilities Group, we are more than just a service provider—we are a trusted partner, committed to keeping commercial spaces comfortable, functional, and running smoothly, so our clients can focus on growing their business.
               </p>
             </div>
             <div className="relative rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&auto=format&fit=crop&q=80"
+                src="/about-image.png"
                 alt="HVAC Technician at Work"
                 width={600}
                 height={400}

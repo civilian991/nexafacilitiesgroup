@@ -46,25 +46,18 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed" style={{ color: 'var(--foreground)' }}>
-              Nexa Facilities Group provides expert maintenance services for commercial stores
-              across multiple states in the U.S., specializing in HVAC/R systems. Our skilled
-              team handles all aspects of system maintenance and repairs, ensuring your
-              facilities remain fully operational and efficient.
+              Nexa Facilities Group delivers professional maintenance services for commercial stores across multiple states in the U.S., with a strong focus on HVAC/R systems. With over 30 years of international experience, our team brings unmatched knowledge and expertise to every project, ensuring your facilities remain efficient, reliable, and fully operational.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: 'var(--foreground)' }}>
-              We bring extensive experience in project implementation, system servicing, and
-              troubleshooting, delivering reliable solutions that keep your business running
-              without interruptions.
+              Our skilled professionals handle every aspect of system care, servicing, and repairs, supported by extensive experience in troubleshooting and project implementation. This allows us to deliver dependable solutions that keep your business running without disruption.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: 'var(--foreground)' }}>
-              With Nexa Facilities Group, you can trust that your commercial spaces are in the
-              hands of experts committed to keeping your operations smooth, safe, and fully
-              functional.
+              When you partner with Nexa Facilities Group, you gain more than a service provider—you gain a trusted partner backed by decades of proven expertise, committed to keeping your commercial spaces safe, comfortable, and performing at their best.
             </p>
           </div>
           <div className="relative rounded-lg overflow-hidden" style={{ boxShadow: 'var(--shadow-lg)' }}>
             <Image
-              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&auto=format&fit=crop&q=80"
+              src="/hero-image.png"
               alt="HVAC Technician at Work"
               width={600}
               height={400}
