@@ -28,7 +28,7 @@ export default function TermsPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-4 text-primary">Agreement to Terms</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  These Terms of Service ("Terms") constitute a legally binding agreement between you and Nexa Facilities Group ("Company," "we," "us," or "our") concerning your access to and use of our website and services. By accessing or using our services, you agree to be bound by these Terms.
+                  These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you and Nexa Facilities Group (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) concerning your access to and use of our website and services. By accessing or using our services, you agree to be bound by these Terms.
                 </p>
               </div>
 
@@ -87,7 +87,7 @@ export default function TermsPage() {
 
                 <h3 className="text-xl font-bold mb-3 text-foreground">Parts Warranty</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Parts installed by us are covered by the manufacturer's warranty. We will assist in warranty claims for defective parts.
+                  Parts installed by us are covered by the manufacturer&apos;s warranty. We will assist in warranty claims for defective parts.
                 </p>
 
                 <h3 className="text-xl font-bold mb-3 text-foreground">Limitation of Warranty</h3>

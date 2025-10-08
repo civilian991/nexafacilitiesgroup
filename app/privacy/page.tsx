@@ -28,7 +28,7 @@ export default function PrivacyPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-4 text-primary">Introduction</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  Nexa Facilities Group ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                  Nexa Facilities Group (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
                 </p>
               </div>
 
@@ -119,7 +119,7 @@ export default function PrivacyPage() {
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold mb-4 text-primary">Children's Privacy</h2>
+                <h2 className="text-3xl font-bold mb-4 text-primary">Children&apos;s Privacy</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children under 18.
                 </p>
