@@ -36,11 +36,11 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/nexa.png"
+                src="/nexa-logo.png"
                 alt="Nexa Facilities Group"
-                width={120}
-                height={40}
-                className="h-10 w-auto"
+                width={200}
+                height={60}
+                className="h-12 w-auto"
                 priority
               />
             </Link>
