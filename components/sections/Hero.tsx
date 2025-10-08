@@ -7,14 +7,9 @@ export default function Hero() {
       style={{ backgroundImage: 'linear-gradient(135deg, oklch(0.3500 0.1800 250), oklch(0.4200 0.1600 240))' }}
     >
       <div className="container mx-auto px-4 lg:px-8 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fadeInUp">
-          FAST, PROFESSIONAL SERVICE
-          <br />
-          YOU CAN TRUST
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fadeInUp animate-delay-200">
+        <h1 className="text-3xl md:text-5xl font-bold mb-8 animate-fadeInUp leading-relaxed">
           Dependable, efficient, and professional service designed to keep your business running smoothly without interruption.
-        </p>
+        </h1>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp animate-delay-400">
           <Link
             href="/contact"

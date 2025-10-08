@@ -334,8 +334,8 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-bold mb-1 text-foreground">Service Area</h4>
                     <p className="text-gray-600">
-                      Serving 10+ states across the United States with consistent, reliable HVAC/R
-                      maintenance services for commercial facilities.
+                      Serving commercial facilities across multiple states in the United States with consistent, reliable HVAC/R
+                      maintenance services.
                     </p>
                   </div>
                 </div>
@@ -390,7 +390,7 @@ export default function ContactPage() {
               {
                 question: 'What areas do you serve?',
                 answer:
-                  'We provide services across 10+ states including California, Texas, Florida, New York, and many others. Contact us to confirm coverage in your specific area.'
+                  'We provide services across multiple states in the United States. Contact us to confirm coverage in your specific area.'
               },
               {
                 question: 'Do you offer preventive maintenance contracts?',

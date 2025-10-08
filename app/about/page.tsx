@@ -31,10 +31,10 @@ export default function AboutPage() {
   }, []);
 
   const stats = [
-    { value: '10+', label: 'States Covered', description: 'Comprehensive service across multiple states' },
-    { value: '500+', label: 'Stores Serviced', description: 'Commercial locations maintained regularly' },
+    { value: '24/7', label: 'Emergency Service', description: 'Round-the-clock support when you need it' },
     { value: '99%', label: 'Uptime Rate', description: 'System reliability across all clients' },
-    { value: '24/7', label: 'Emergency Service', description: 'Round-the-clock support when you need it' }
+    { value: '30+', label: 'Years Experience', description: 'International expertise in HVAC/R systems' },
+    { value: '100%', label: 'Customer Satisfaction', description: 'Dedicated to reliable service delivery' }
   ];
 
   const values = [
@@ -96,7 +96,7 @@ export default function AboutPage() {
     { title: 'Experienced Technicians', description: 'Certified professionals with extensive HVAC/R expertise.' },
     { title: 'Fast Response Times', description: 'We minimize downtime with quick emergency response.' },
     { title: 'Transparent Pricing', description: 'No hidden fees or surprise charges—just honest service.' },
-    { title: 'Proven Track Record', description: '500+ commercial locations trust us with their maintenance.' },
+    { title: 'Proven Track Record', description: 'Trusted by commercial facilities for consistent, reliable maintenance.' },
     { title: 'Customized Solutions', description: 'Service plans tailored to your specific business needs.' }
   ];
 
