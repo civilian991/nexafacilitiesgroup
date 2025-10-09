@@ -76,7 +76,6 @@ export default function PrivacyPage() {
                   We do not sell, trade, or rent your personal information to third parties. We may share your information with:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                  <li><strong>Service Providers:</strong> Third-party vendors who assist us in operating our business</li>
                   <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
                   <li><strong>Business Transfers:</strong> In connection with any merger, sale, or acquisition</li>
                 </ul>
